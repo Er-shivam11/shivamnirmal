@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Add Bootstrap CSS link -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+     <!-- Add your custom CSS file (if needed) -->
+     <link rel="stylesheet" href="styles.css">
+    <title>Your Portfolio</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#mywork">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div class="content-container">
+            <div class="text-container">
+                <h1>Shivam Nirmal</h1>
+                <p class="typewriter" id="line1"></p> <!-- Placeholder for Line 1 -->
+            </div>
+            <div class="profile-main">
+                <!-- Replace the src attribute with your profile image URL -->
+                <img src="images/p.jpg" alt="Shivam Nirmal" class="profile-image">
+            </div>
+        </div>
+    </section>
+    
+    <div class="profile">
+        <div class="typewriter">
+        </div>
+        <div class="typewriter">
+        </div>
+        <div class="typewriter">
+        </div>
+    </div>    
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="container" style="background-color: black;">
+            <div class="row">
+                <!-- Left column for your picture -->
+                <div class="col-md-4 mb-4 p-4">
+                    <div class="profile-ring">
+                        <!-- Replace the src attribute with your profile image URL -->
+                        <img src="images/pro.jpeg" alt="Shivam Nirmal" class="profile-image">
+                    </div>
+                </div>
+                <!-- Right column for your content -->
+                <div class="col-md-8 mb-8">
+                    <div class="card about-card text-center p-5">
+                        <p class="text-center" style="color: whitesmoke;">As an analytically-minded IT Engineer who has transitioned into a full-stack Django developer with a solid foundation in web development using Django, I am wholeheartedly committed to advancing my expertise in Python-based data science, machine learning, and artificial intelligence (AI). With a deep passion and a versatile skill set, I am determined to create innovative solutions and thrive in the dynamic fields of ML and AI development.</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        
+        
+        <div class="skill-card">
+            <img src="images/py.png" alt="Python">
+            <p>Python</p>
+        </div>
+        <div class="skill-card">
+            <img src="images/dj.png" alt="Django">
+            <p>Django</p>
+        </div>
+        <div class="skill-card">
+            <img src="images/api.png" alt="Web Development">
+            <p>REST-API</p>
+        </div>
+        <div class="skill-card">
+            <img src="images/da.png" alt="Web Development">
+            <p>Data Analysis</p>
+        </div>
+        <div class="skill-card">
+            <img src="images/ML.png" alt="Web Development">
+            <p>Machine Learning</p>
+        </div>
+        <div class="skill-card">
+            <img src="images/sql.png" alt="Web Development">
+            <p>SQL</p>
+        </div>
+        
+        <!-- Add more skill cards here -->
+    </section>
+        
+
+    <section id="mywork">
+        <h2>My Work</h2>
+        
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 mb-4">
+                    <div class="card work-card" style="width: 18rem;">
+                      <img src="images/pr.png" class="card-img-top" alt="Image Alt Text">
+                      <div class="card-body">
+                        <h3 style="color: white;">Sentiment Analysis</h3>
+                        <p style="color: white; font-size: 14px">This project utilizes natural language processing techniques to classify the sentiment of text data, demonstrating text data preprocessing, machine learning model development with scikit-learn, and model deployment in a Flask web application.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                </div>
+                  
+                <div class="col-sm-4 mb-4">
+                    <div class="card work-card" style="width: 18rem;">
+                        <img src="images/pr.png" class="card-img-top" alt="Image Alt Text">
+   
+                      <div class="card-body">
+                        <h3 style="color: white;">Sales Analysis</h3>
+                        <p style="color: white; font-size: 14px">This project performs in-depth analysis and visualization of sales data to identify actionable trends and insights. Python and widely-used data analysis libraries like Pandas, NumPy, and Matplotlib are employed for data processing, exploration, and visualization.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-sm-4 mb-4">
+                  <div class="card work-card" style="width: 18rem;">
+                    <img src="images/pr.png" class="card-img-top" alt="Image Alt Text">
+
+                    <div class="card-body">
+                        <h3 style="color: white;">Object Detection</h3>
+                        <p style="color: white; font-size: 14px">This project employs computer vision methods to detect objects within images and videos. It showcases the application of popular deep learning frameworks like TensorFlow and Keras for training and deploying object detection models.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <!-- Add your contact information here -->
+        <p>You can reach me at shivamnirmal.097@gmail.com</p>
+    
+        <!-- Social links with spacing -->
+        <div class="social-card">
+            <div class="row justify-content-md-center">
+                <div class="col-3">
+                    <ul class="social-links">
+                        <li><a href="https://www.linkedin.com/in/ersn/" class="social-link">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul class="social-links">
+                        <li><a href="https://github.com/Er-shivam11" class="social-link">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul class="social-links">
+                        <li><a href="mailto:shivamnirmal.097@gmail.com" class="social-link">Email</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul class="social-links">
+                        <li><a href="https://twitter.com/your-username" class="social-link">
+                            <img src="twitter-icon.png" alt="Twitter">
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <!-- Add more social links here with additional col-4 divs -->
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2023 Shivam Nirmal. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    
+    
+    <script src="custom.js"></script>
+        
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+</html>
