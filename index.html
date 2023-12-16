@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/styles.css">
-     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>My Portfolio</title>
+    
 </head>
 <body>
     <header>
@@ -28,17 +29,6 @@
             <div class="profile-main">
                 <img src="images/pr.jpg" alt="Shivam Nirmal" class="profile-image">
             </div>
-            <!-- <div class="loader">
-                <div class="face face1">
-                    <div class="circle"></div>
-                </div>
-                <div class="face face2">
-                    <div class="circle"></div>
-                </div>
-            </div>
-            <div class="inner-image">
-                <img src="images/pro.jpeg" alt="Your Image">
-            </div> -->
         </div>
     </section>
     
@@ -86,7 +76,7 @@
         </div>
         <div class="skill-card">
             <img src="images/ML.png" alt="Web Development">
-            <p>Machine Learning</p>
+            <p>AI/ML</p>
         </div>
         <div class="skill-card">
             <img src="images/sql.png" alt="Web Development">
@@ -99,41 +89,39 @@
 
     <section id="mywork">
         <h2>Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 mb-4">
-                    <div class="card work-card" style="width: 15rem;">
+        <div class="row">
+            <div class="col-sm-4 mb-4">
+                <div class="card-body">
+                  <div class="project-card">
                       <img src="images/car.png" class="card-img-top" alt="Image Alt Text" height="250" >
-                    </div>
-                      <div class="card-body">
-                        <h3 style="color: black;"></h3>
-                        <p style="color: black; font-size: 14px">Developed a Django CRUD application for an online car shop. The application allows users to view, create, read, and update car listings. The application uses a database to 
-                            store the car listings, and Django models to interact with the database.</p>
-                        <a href="https://github.com/Er-shivam11/web-development-projects/tree/main/ecommerce" class="btn btn-primary">Car-Luxmart</a>
-                      </div>
-                </div>
-                <div class="col-sm-4 mb-4">
-                    <div class="card work-card" style="width: 15rem;">
-                        <img src="images/d.png" class="card-img-top" alt="Image Alt Text" height="250" >
-                    </div>
-                      <div class="card-body">
-                        <h3 style="color: black;"></h3>
-                        <p style="color: black; font-size: 14px">This project performs in-depth analysis and visualization of sales data to identify actionable trends and insights. Python and widely-used data analysis libraries like Pandas, NumPy, and Matplotlib are employed for data processing, exploration, and visualization.</p>
-                        <a href="https://github.com/Er-shivam11/datascienceproject/tree/main/salesanalysis" class="btn btn-primary">Sales Analysis</a>
-                      </div>
                   </div>
-                <div class="col-sm-4 mb-4">
-                  <div class="card work-card" style="width: 15rem;">
-                    <img src="images/c.png" class="card-img-top" alt="Image Alt Text" height="250" width="250" >
-                  </div>
-                    <div class="card-body">
-                        <h3 style="color: black;"></h3>
-                        <p style="color: black; font-size: 14px">This Python script aims to detect credit card fraud using various machine learning models. The script uses a dataset containing credit card transactions, where the objective is to predict whether a transaction is fraudulent or not.</p>
-                        <a href="https://github.com/Er-shivam11/datascienceproject/tree/main/creditcardfrauddetection" class="btn btn-primary">Credit card</a>
-                    </div>
+                  <h3 style="color: black;"></h3>
+                  <p style="color: black; font-size: 14px">Developed a Django CRUD application for an online car shop. The application allows users to view, create, read, and update car listings. The application uses a database to 
+                      store the car listings, and Django models to interact with the database.</p>
+                  <a href="https://github.com/Er-shivam11/web-development-projects/tree/main/ecommerce" class="btn btn-primary">Car-Luxmart</a>
                 </div>
             </div>
-        </div>        
+            <div class="col-sm-4 mb-4">
+                <div class="card-body">
+                  <div class="project-card">
+                      <img src="images/d.png" class="card-img-top" alt="Image Alt Text" height="250" >
+                  </div>
+                  <h3 style="color: black;"></h3>
+                  <p style="color: black; font-size: 14px">This project performs in-depth analysis and visualization of sales data to identify actionable trends and insights. Python and widely-used data analysis libraries like Pandas, NumPy, and Matplotlib are employed for data processing, exploration, and visualization.</p>
+                  <a href="https://github.com/Er-shivam11/datascienceproject/tree/main/salesanalysis" class="btn btn-primary">Sales Analysis</a>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <div class="card-body">
+                    <div class="project-card">
+                        <img src="images/c.png" class="card-img-top" alt="Image Alt Text" height="250" width="250" >
+                    </div>
+                    <h3 style="color: black;"></h3>
+                    <p style="color: black; font-size: 14px">This Python script aims to detect credit card fraud using various machine learning models. The script uses a dataset containing credit card transactions, where the objective is to predict whether a transaction is fraudulent or not.</p>
+                    <a href="https://github.com/Er-shivam11/datascienceproject/tree/main/creditcardfrauddetection" class="btn btn-primary">Credit card</a>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
@@ -160,7 +148,7 @@
                   
                 <div class="col-3">
                     <ul class="social-links">
-                            <a href="https://twitter.com/your-username"><img src="images/t.png"  alt="Email icon" height="40" width="40">
+                            <a href="https://twitter.com/ShivamN62797808"><img src="images/t.png"  alt="Email icon" height="40" width="40">
                             </a>
                     </ul>
                 </div>

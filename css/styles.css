@@ -34,18 +34,41 @@ header ul li a {
 }
 
 /* Create a container to hold the profile and text */
-.content-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    text-align: center;
-    margin-top: 80px;
-    margin-left: 200px;
-    margin-right: 200px;
 
-    /* Add space below the fixed header */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  margin-top: 80px;
 }
+
+.text-container {
+  flex: 1;
+  margin-top: 20px; /* Add space between profile and text */
+  text-align: center; /* Center text on smaller screens */
+}
+
+.profile-main {
+  margin-top: 20px; /* Add space between text and profile image */
+}
+
+@media (min-width: 768px) {
+  /* Apply these styles only for screens wider than 768px */
+  .content-container {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 200px;
+      margin-right: 200px;
+      text-align: left;
+  }
+
+  .text-container {
+      text-align: left; /* Adjust text alignment for larger screens */
+  }
+}
+
 .typewriter {
     overflow: hidden;
     border-right: 2px solid #000;
@@ -55,14 +78,6 @@ header ul li a {
     animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
 }
 
-
-.text-container {
-    flex: 1;
-    padding-right: 30px;
-    /* Add space between profile and text */
-    text-align: left;
-    /* Adjust text alignment */
-}
 
 h1 {
     font-size: 3em;
@@ -78,110 +93,6 @@ p {
     font-size: 1.2em;
 }
 
-.loader{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 200px;
-    height: 200px;
-    box-sizing: border-box;
-  }
-  .loader .face{
-    position: absolute;
-    border:2px solid #121212;
-  }
-  .loader .face.face1{
-    top: 0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    background:090909;
-    box-shadow:0 0 10px rgba(0,0,0,1);
-    border-radius: 50%;
-    border-left: 2px solid #ffff00;
-    border-top: 2px solid #ffff00;
-    animation: ani1 3s linear infinite;
-  }
-  .loader .face.face2{
-    top: 30px;
-    left:30px;
-    right: 30px;
-    bottom: 30px;
-    background:#090909;
-    box-shadow:0 0 10px rgba(0,0,0,1);
-    border-radius: 50%;
-    border-right: 2px solid #03a9f4;
-    border-bottom: 2px solid #03a9f4;
-    animation: ani2 3s linear infinite;
-  
-  }
-  .loader .face .circle{
-    position: absolute;
-    top: calc(50% - 1px);
-    left: 50%;
-    width: 50%;
-    height: 2px;
-    transform-origin: left;
-  }
-  .loader .face.face1 .circle{
-    transform: rotate(-45deg);
-  }
-  .loader .face.face2 .circle{
-    transform: rotate(-45deg);
-  }
-  .loader .face .circle:before{
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    top: -4px;
-    right: -6px;
-  }
-  .loader .face.face1 .circle:before{
-    background:#ffff00;
-    box-shadow: 0 0 20px #ff0,0 0 40px #ff0,0 0 60px #ff0,0 0 80px #ff0,
-    0 0 100px #ff0,0 0 0 5px rgba(255,255,0,.1);
-  }
-  .loader .face.face2 .circle:before{
-    background:#03a9f4;
-    box-shadow: 0 0 20px #03a9f4,0 0 40px #03a9f4,0 0 60px #03a9f4,0 0 80px #03a9f4,
-    0 0 100px #03a9f4,0 0 0 5px rgba(3,169,244,.1);
-  }
-  @keyframes ani1{
-    0%{
-      transform:rotate(0deg);
-    }
-    100%{
-      transform:rotate(360deg);
-    }
-  }
-  @keyframes ani2{
-    0%{
-      transform:rotate(0deg);
-    }
-    100%{
-      transform:rotate(-360deg);
-    }
-  }
-  .inner-image {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              width: 100px; /* Adjust the size of the inner image as needed */
-              height: 100px; /* Adjust the size of the inner image as needed */
-              border-radius: 50%;
-              overflow: hidden;
-          }
-  
-          .inner-image img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-          }
 
 .profile-main {
     /* width: 350px; */
@@ -224,135 +135,152 @@ p {
     margin-top: 3%;
     
 }
-.project-image{
-     width: 130px;
-    height: 130px;
-    /* border-radius: 50%; */
-    object-fit: cover;
-}  
+.text-center {
+  transform: translateY(100px);
+  margin-top: 50px;
 
-/* Center and space "About Me" and "Contact Me" sections */
-#about,
-#contact,
-#skills,
-#mywork {
+}
+#about {
     text-align: center;
     margin: 80px 0;
 }
-
-.text-center {
-    transform: translateY(100px);
-    margin-top: 50px;
-
+/* done */
+#mywork {
+  text-align: center;
+  padding: 80px 20px;
 }
 
-/* background: linear-gradient(to right,#000, #000, #000); */
 
-.card.work-card {
-    
-    background-color: black;
-    color: white;
-    margin: 0 auto;
-  }
-.projects-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping to the next row */
-    justify-content: space-between; /* Space between boxes */
-}
 
-/* CSS for individual project boxes (similar to your existing styles) */
-.project-box {
-    flex: 0 0 calc(25% - 20px); /* Adjust the width as needed */
-    margin-bottom: 20px;
-    
-    /* Rest of your existing styles */
-}
 /* Style for the skill cards */
-.skill-card {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: linear-gradient(to right,#000, #000, #000);
-    transition: transform 0.25s ease-in-out;
-
+/* DONE */
+#skills {
+  text-align: center;
+  padding: 80px 20px;
 }
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-  }
-  
-  .skill-card:hover {
-    transform: scale(1.1);
-  }
-  
-  @media (max-width: 768px) {
-    .skills-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .skills-grid {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
+
+.skill-card {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: linear-gradient(to right, #000, #000, #000);
+  transition: transform 0.25s ease-in-out;
+  width: calc(33.33% - 20px); /* Adjust the width for three cards in a row */
+  max-width: 150px; /* Add a max-width for smaller screens */
+}
 
 .skill-card img {
-    width: 80px; /* Adjust the image size as needed */
-    height: 80px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover; /* Maintain aspect ratio */
 }
 
-/* Create rows of skill cards */
-@media (min-width: 768px) {
-    .skill-card {
-        width: 25%; /* Adjust the width of each card based on your design */
-    }
+.skill-card:hover {
+  transform: scale(1.1);
 }
 
-.btn-primary {
-    background: linear-gradient(to right, #c33764,#1d2671);
-    border-color: #212121;
-    color: #fff;
-    padding: 10px 20px;
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .skill-card {
+      width: calc(50% - 20px); /* Adjust the width for two cards in a row on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .skill-card {
+      width: calc(100% - 20px); /* Adjust the width for a single card in a row on even smaller screens */
+  }
+}
+
+#mywork {
+  color: #fff;
+  padding: 50px 0;
+}
+
+.project-card {
+  display: inline-block;
+  text-align: center;
+  margin: 5px; /* Adjusted margin to reduce space between cards */
+  padding: 20px;
+  border: 2px solid #000; /* Set border color to black */
+  border-radius: 10px;
+  background: linear-gradient(to right, #000, #000, #000);
+  transition: transform 0.25s ease-in-out;
+  width: calc(33.33% - 10px); /* Adjusted width to accommodate reduced margin */
+  max-width: 250px;
+}
+
+.project-card img {
+  width: 70%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .col-sm-4 {
+    flex: 0 0 100%;
+  }
+}
+
+/* done  */
+
+  #contact {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.social-card {
+    background-color: transparent;
+    padding: 10px;
     border-radius: 5px;
+    width: 80%; /* Set the width to 80% for better compatibility */
+    max-width: 400px; /* Add a max-width for larger screens */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.row.justify-content-md-center {
+    display: flex;
+    justify-content: center;
+}
+
+.col-3 {
+    text-align: center;
+}
+
+.social-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-links a {
+    color: black;
     text-decoration: none;
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .btn-primary:hover {
-    background: linear-gradient(to right, #ff69b4, #d94397, #212121);
-    border-color: #212121;
-    color: #fff;
-  }
-  
+}
 
+.social-links img {
+    height: 40px;
+    width: 40px;
+    margin: 10px; /* Add spacing between social links */
+}
 
-    /* Style for the social links */
-    .social-card {
-        background-color:transparent;
-        padding: 10px;
-        border-radius: 5px;
-        width: 50%; /* Set the width to 50% */
-        margin: 0 auto; /* Center the card horizontally */
-    }
-    
-    .social-links {
-        margin: 0;
-    }
-    
-    .social-link {
-        color: black;
-        text-decoration: none;
-    }
-    
-    .social-link:hover {
-        text-decoration: underline;
-    }
+.social-links a:hover {
+    text-decoration: underline;
+}
+
     
 .footer {
     background-color: black;
