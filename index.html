@@ -6,11 +6,62 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>My Portfolio</title>
-    
+    <style>
+        /* Your existing styles... */
+
+        header {
+            background-color: black;
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+        header ul {
+            list-style-type: none;
+        }
+
+        header ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                text-align: center;
+            }
+
+            header ul {
+                display: none;
+            }
+
+            .menu-icon {
+                display: block;
+                cursor: pointer;
+            }
+
+            .menu-icon::before {
+                content: '\2630';
+                font-size: 30px;
+                color: #fff;
+            }
+
+            .menu-icon.active + ul {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="menu-icon" onclick="toggleMenu()"></div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -18,17 +69,19 @@
                 <li><a href="#mywork">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <section id="hero">
         <div class="content-container">
+            
+            <div class="profile-main">
+                <img src="images/pr.jpg" alt="Shivam Nirmal" class="profile-image">
+            </div>
             <div class="text-container">
                 <h1>Shivam Nirmal</h1>
                 <p class="typewriter" id="line1"></p> <!-- Placeholder for Line 1 -->
             </div>
-            <div class="profile-main">
-                <img src="images/pr.jpg" alt="Shivam Nirmal" class="profile-image">
-            </div>
+
         </div>
     </section>
     
@@ -158,6 +211,12 @@
     <footer style="background-color: black;">
         <p style=" text-align:center; background-color:  black; " t>&copy; 2023 Shivam Nirmal. All rights reserved.</p> 
     </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('header ul');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
     <script src="js/custom.js"></script>
 </body>
 </html>

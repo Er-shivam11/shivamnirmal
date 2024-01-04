@@ -6,43 +6,70 @@ body {
     
 }
 
+/* Default header styles */
 header {
-    background-color: black;
-    padding: 20px;
-    width: 100%;
-    /* Full width */
-    position: fixed;
-    /* Fixed position at the top */
-    top: 0;
-    z-index: 1;
-    /* Ensure header stays above other content */
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 header ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 header ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 header ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
+
+/* Media query for smaller screens (e.g., phones) */
+@media (max-width: 768px) {
+  header {
+      text-align: center;
+  }
+
+  header ul {
+      display: none; /* Hide the list by default on smaller screens */
+  }
+
+  .menu-icon {
+      display: block; /* Display the menu icon on smaller screens */
+      cursor: pointer;
+  }
+
+  /* Styles for the menu icon (you can use an icon library or customize as needed) */
+  .menu-icon::before {
+      content: '\2630'; /* Unicode character for the three horizontal lines (hamburger icon) */
+      font-size: 30px; /* Adjust the size of the icon */
+      color: #fff; /* Set the color of the icon */
+  }
+
+  /* Show the list when the menu icon is clicked */
+  .menu-icon.active + ul {
+      display: block;
+  }
+}
+
 
 /* Create a container to hold the profile and text */
 
-.content-container {
+/* .content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px;
   text-align: center;
   margin-top: 80px;
-}
+} */
 
 .text-container {
   flex: 1;
@@ -58,15 +85,18 @@ header ul li a {
   /* Apply these styles only for screens wider than 768px */
   .content-container {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       margin-left: 200px;
       margin-right: 200px;
       text-align: left;
   }
 
   .text-container {
-      text-align: left; /* Adjust text alignment for larger screens */
-  }
+    flex: 1;
+    margin-top: 20px;
+    text-align: center; /* Center text on all screens */
+}
+
 }
 
 .typewriter {
@@ -102,6 +132,7 @@ p {
     border-image-slice: 1;
     border-radius: 50%;
     animation: pulse 2s linear infinite;
+    
 }
 .profile-ring {
     width: 350px;
@@ -128,16 +159,19 @@ p {
 }
 
 .profile-image {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 3%;
-    
-}
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 3% auto 0; /* Updated margin to center vertically and auto for horizontal centering */
+  display: block;
+  margin-top: 10%;}
+
 .text-center {
   transform: translateY(100px);
   margin-top: 50px;
+  margin: 3% auto 0; /* Updated margin to center vertically and auto for horizontal centering */
+
 
 }
 #about {
