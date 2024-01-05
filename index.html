@@ -73,15 +73,13 @@
     </header>
     <section id="hero">
         <div class="content-container">
-            
             <div class="profile-main">
                 <img src="images/pr.jpg" alt="Shivam Nirmal" class="profile-image">
             </div>
             <div class="text-container">
                 <h1>Shivam Nirmal</h1>
-                <p class="typewriter" id="line1"></p> <!-- Placeholder for Line 1 -->
+                <p id="demo"></p>
             </div>
-
         </div>
     </section>
     
@@ -90,25 +88,24 @@
         </div>
     </div>    
     <section id="about">
-        <h2>About Me</h2>
-        <div class="container" style="background-color: transparent;">
-            <div class="row gradient">
+        <div class="content-container">
+            <div class="row gradient justify-content-center justify-content-md-center">
+
                 <!-- Left column for your picture -->
                 <div class="col-md-4 mb-4 p-4">
                     <div class="profile-ring">
-                        <!-- Replace the src attribute with your profile image URL -->
                         <img src="images/pro.jpeg" alt="Shivam Nirmal" class="profile-image">
                     </div>
                 </div>
-                <!-- Right column for your content -->
-                <div class="col-md-8 mb-8">
-                    <p class="text-center" style="color: black; margin: 0 auto;">
-                      As an analytically-minded IT Engineer who has transitioned into a full-stack Django developer with a solid foundation in web development using Django, I am wholeheartedly committed to advancing my expertise in Python-based data science, machine learning, and artificial intelligence (AI). With a deep passion and a versatile skill set, I am determined to create innovative solutions and thrive in the dynamic fields of ML and AI development.
-                    </p>
-                </div>
+            </div>
+            <div class="text-container">
+                <p class="text-center" style="color: black;">
+                    As an analytically-minded IT Engineer who has transitioned into a full-stack Django developer with a solid foundation in web development using Django, I am wholeheartedly committed to advancing my expertise in Python-based data science, machine learning, and artificial intelligence (AI). With a deep passion and a versatile skill set, I am determined to create innovative solutions and thrive in the dynamic fields of ML and AI development.
+                </p>
             </div>
         </div>
     </section>
+    
     <section id="skills">
         <h2>Skills</h2>
         <div class="skill-card">
@@ -211,7 +208,10 @@
     <footer style="background-color: black;">
         <p style=" text-align:center; background-color:  black; " t>&copy; 2023 Shivam Nirmal. All rights reserved.</p> 
     </footer>
-    <script>
+ 
+
+<script>
+
         function toggleMenu() {
             var menu = document.querySelector('header ul');
             menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
