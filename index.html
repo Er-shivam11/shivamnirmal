@@ -6,58 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>My Portfolio</title>
-    <style>
-        /* Your existing styles... */
-
-        header {
-            background-color: black;
-            padding: 20px;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            z-index: 1;
-        }
-
-        header ul {
-            list-style-type: none;
-        }
-
-        header ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        header ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            header {
-                text-align: center;
-            }
-
-            header ul {
-                display: none;
-            }
-
-            .menu-icon {
-                display: block;
-                cursor: pointer;
-            }
-
-            .menu-icon::before {
-                content: '\2630';
-                font-size: 30px;
-                color: #fff;
-            }
-
-            .menu-icon.active + ul {
-                display: block;
-            }
-        }
-    </style>
+    
 </head>
 <body>
     <header>
@@ -71,6 +20,8 @@
             </ul>
         </div>
     </header>
+    
+    
     <section id="hero">
         <div class="content-container">
             <div class="profile-main">
@@ -143,11 +94,10 @@
             <div class="col-sm-4 mb-4">
                 <div class="card-body">
                   <div class="project-card">
-                      <img src="images/car.png" class="card-img-top" alt="Image Alt Text" height="250" >
+                      <img src="images/online-store.png" class="card-img-top" alt="Image Alt Text" height="250" >
                   </div>
                   <h3 style="color: black;"></h3>
-                  <p style="color: black; font-size: 14px">Developed a Django CRUD application for an online car shop. The application allows users to view, create, read, and update car listings. The application uses a database to 
-                      store the car listings, and Django models to interact with the database.</p>
+                  <p style="color: black; font-size: 14px">Developed a Django CRUD application for an online fashion store catering to both men and women. The application allows users to browse and view fashion products, search for specific items, and perform CRUD operations such as creating, updating, and deleting product listings based on RBAC(role based access control).</p>
                   <a href="https://github.com/Er-shivam11/web-development-projects/tree/main/ecommerce" class="btn btn-primary">Car-Luxmart</a>
                 </div>
             </div>
