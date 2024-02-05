@@ -1,172 +1,807 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>My Portfolio</title>
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Shivam | Personal Portfolio</title>
+
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.css" />
+
+    <!-- Magnific-Popup CSS -->
+    <link rel="stylesheet" href="assets/vendors/magnific-popup/magnific-popup.css" />
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet"  href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
 </head>
 <body>
-    <header>
-        <div class="menu-icon" onclick="toggleMenu()"></div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#mywork">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+
+
+    <!-------------------- Scroll-Top Area (Start) -------------------->
+    <a href="#home" class="scroll-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-------------------- Scroll-Top Area (End) -------------------->
+
+        
+
+    <!-------------------- Header Area (Start) -------------------->
+    <header class="header">
+
+        <!-- Logo -->
+        <a class="logo" href="#home">
+            <h2> Shivam </h2> 
+            <!-- <img src="assets/images/logo.png" alt="logo" /> -->
+        </a>
+        <!-- Logo End -->
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#service">service</a>
+            <a href="#portfolio">portfolio</a>
+            <!-- <a href="#testimonial">testimonials</a> -->
+            <!-- <a href="#blog">blogs</a> -->
+            <a href="#contact">contact</a>
+        </nav>
+
+        <!-- Menubar -->
+        <div class="fas fa-bars" id="menu-btn"></div>
+        
     </header>
-    
-    
-    <section id="hero">
-        <div class="content-container">
-            <div class="profile-main">
-                <img src="images/pr.jpg" alt="Shivam Nirmal" class="profile-image">
-            </div>
-            <div class="text-container">
-                <h1>Shivam Nirmal</h1>
-                <p id="demo"></p>
-            </div>
-        </div>
-    </section>
-    
-    <div class="profile">
-        <div class="typewriter">
-        </div>
-    </div>    
-    <section id="about">
-        <div class="content-container">
-            <div class="row gradient justify-content-center justify-content-md-center">
-
-                <!-- Left column for your picture -->
-                <div class="col-md-4 mb-4 p-4">
-                    <div class="profile-ring">
-                        <img src="images/pro.jpeg" alt="Shivam Nirmal" class="profile-image">
-                    </div>
-                </div>
-            </div>
-            <div class="text-container">
-                <p class="text-center" style="color: white;">
-                    As an analytically-minded IT Engineer who has transitioned into a full-stack Django developer with a solid foundation in web development using Django, I am wholeheartedly committed to advancing my expertise in Python-based data science, machine learning, and artificial intelligence (AI). With a deep passion and a versatile skill set, I am determined to create innovative solutions and thrive in the dynamic fields of ML and AI development.
-                </p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill-card">
-            <img src="images/py.png" alt="Python">
-            <p>Python</p>
-        </div>
-        <div class="skill-card">
-            <img src="images/dj.png" alt="Django">
-            <p>Django</p>
-        </div>
-        <div class="skill-card">
-            <img src="images/api.png" alt="Web Development">
-            <p>REST-API</p>
-        </div>
-        <div class="skill-card">
-            <img src="images/da.png" alt="Web Development">
-            <p>Data Analysis</p>
-        </div>
-        <div class="skill-card">
-            <img src="images/ML.png" alt="Web Development">
-            <p>AI/ML</p>
-        </div>
-        <div class="skill-card">
-            <img src="images/sql.png" alt="Web Development">
-            <p>SQL</p>
-        </div>
-        
-        <!-- Add more skill cards here -->
-    </section>
-        
-
-    <section id="mywork">
-        <h2>Projects</h2>
-        <div class="row">
-            <div class="col-sm-4 mb-4">
-                <div class="card-body">
-                  <div class="project-card">
-                      <img src="images/online-store.png" class="card-img-top" alt="Image Alt Text" height="250" >
-                  </div>
-                  <h3 style="color: white;"></h3>
-                  <p style="color: white; font-size: 14px">Developed an application for an online fashion store catering to both men and women. The application allows users to browse and view fashion products, search for specific items, and perform CRUD operations such as creating, updating, and deleting product listings based on RBAC(role based access control).</p>
-                  <a href="https://github.com/Er-shivam11/web-development-projects/tree/main/ecommerce" class="btn btn-primary">Luxmart</a>
-                </div>
-            </div>
-            <div class="col-sm-4 mb-4">
-                <div class="card-body">
-                  <div class="project-card">
-                      <img src="images/d.png" class="card-img-top" alt="Image Alt Text" height="250" >
-                  </div>
-                  <h3 style="color: white;"></h3>
-                  <p style="color: white; font-size: 14px">This project performs in-depth analysis and visualization of sales data to identify actionable trends and insights. Python and widely-used data analysis libraries like Pandas, NumPy, and Matplotlib are employed for data processing, exploration, and visualization.</p>
-                  <a href="https://github.com/Er-shivam11/datascienceproject/tree/main/salesanalysis" class="btn btn-primary">Sales Analysis</a>
-                </div>
-            </div>
-            <div class="col-sm-4 mb-4">
-                <div class="card-body">
-                    <div class="project-card">
-                        <img src="images/c.png" class="card-img-top" alt="Image Alt Text" height="250" width="250" >
-                    </div>
-                    <h3 style="color: white;"></h3>
-                    <p style="color: white; font-size: 14px">This Python script aims to detect credit card fraud using various machine learning models. The script uses a dataset containing credit card transactions, where the objective is to predict whether a transaction is fraudulent or not.</p>
-                    <a href="https://github.com/Er-shivam11/datascienceproject/tree/main/creditcardfrauddetection" class="btn btn-primary">Credit card</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <!-- Add your contact information here -->
-    
-        <!-- Social links with spacing -->
-        <div class="social-card">
-            <div class="row justify-content-md-center">
-                <div class="col-3">
-                    <ul class="social-links">
-                        <a href="https://www.linkedin.com/in/ersn/"><img src="images/ln.png"  alt="Email icon" height="40" width="40"></a>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <ul class="social-links">
-                        <a href="https://github.com/Er-shivam11"><img src="images/g.png" alt="GitHub icon" height="40" width="40"></a>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <ul class="social-links">
-                        <a href="mailto:shivamnirmal.097@gmail.com"><img src="images/em.png"  alt="Email icon" height="40" width="40"></a>
-                    </ul>
-                  </div>
-                  
-                <div class="col-3">
-                    <ul class="social-links">
-                            <a href="https://twitter.com/ShivamN62797808"><img src="images/t.png"  alt="Email icon" height="40" width="40">
-                            </a>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer style="background-color: white;">
-        <p style=" text-align:center; background-color:  white; " t>&copy; 2023 Shivam Nirmal. All rights reserved.</p> 
-    </footer>
+    <!-------------------- Header Area (End) -------------------->
  
 
-<script>
 
-        function toggleMenu() {
-            var menu = document.querySelector('header ul');
-            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-        }
+    <!-------------------- Home Area (Start) -------------------->
+    <section class="home" id="home">
+
+        <div class="box-container">
+
+            <div class="content">
+                <div class="text">
+                    <h2>hi there!</h1>
+                    <h1>I Am into <span class="typing-text"></span></h1>
+                    <p>Creative web developer offering 4+ years of experience providing high-impact web solutions for many different organizations.</p>
+                    <a href="#" class="btn">about me <i class="fas fa-user"></i></a>
+                </div>
+            </div>
+    
+            <div class="image">
+                <img src="assets/images/Home/pr.jpg" alt="Home-Image">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-------------------- Home Area (End) -------------------->
+
+
+
+    <!-------------------- About Area (Start) -------------------->
+    <section class="about" id="about">
+
+        <div class="box-container">
+
+            <div class="image">
+                <img src="assets/images/About/pp.png" alt="About-Image" />
+            </div>
+    
+            <div class="content">
+
+                <h2>My name is Shivam.</h2>
+                <p>As an analytically-minded IT Engineer who has transitioned into Software developement with a solid foundation in tech stack, I am wholeheartedly committed to advancing my expertise in Python-based full stack, data science, machine learning, and artificial intelligence (AI). With a deep passion and a versatile skill set, I am determined to create innovative solutions and thrive in the dynamic fields of ML and AI development.
+                </p>
+   
+                <div class="about-info">
+
+                    <div class="info">
+                        <h4>age: <span>24</span></h4>
+                        <h4>gender: <span>male</span></h4>
+                        <h4>language: <span>english,hindi</span></h4>
+                        <h4>work: <span>Software developer</span></h4>
+                        <h4>freelance: <span>available</span></h4>
+                        <a href="#" class="btn">download CV <i class="fas fa-download"></i></a>
+                    </div>
+
+                    <div class="counting">
+
+                        <div class="box">
+                            <h1 class="count" data-count="4">4+</h1>
+                            <h3>years of experience</h3>
+                        </div>
+                        
+                        <div class="box">
+                            <h1 class="count" data-count="100">18+</h1>
+                            <h3>projects completed</h3>
+                        </div>
+            
+                        <div class="box">
+                            <h1 class="count" data-count="80">40+</h1>
+                            <h3>happy clients</h3>
+                        </div>
+                                    
+                        <div class="box">
+                            <h1 class="count" data-count="20">20+</h1>
+                            <h3>awards won</h3>
+                        </div>
+                    
+                    </div>
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="skill-container">
+
+            <div class="heading">
+                <h2>my <span>skills</span></h2>
+            </div>
+        
+            <div class="skills">
+                <div class="skill-item item1">
+                    <div class="box">
+                        <h3>HTML5<span> 95% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>CSS3 & Bootstrap<span> 90% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>JavaScript<span> 85% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+        
+                <div class="skill-item item2">
+                    <div class="box">
+                        <h3>Front-end Development<span> 75% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>Back-End & API development <span> 65% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>SQL (Database management)<span> 60% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+        
+                <div class="skill-item item3">
+                    <!-- Add new skills here -->
+                    <div class="box">
+                        <h3>Python(Django)<span> 80% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>NumPy & Pandas<span> 75% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>Visualization (Matplotlib, Seaborn, Tableau)<span> 70% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+        
+                <div class="skill-item item4">
+                    <!-- Add more new skills here -->
+                    <div class="box">
+                        <h3>Git and GitHub<span> 80% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>Docker<span> 70% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    
+                    <div class="box">
+                        <h3>Soft Skills: (Communication, Adaptability)<span> 75% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+
+    </section>
+    <!-------------------- About Area (End) -------------------->
+
+    
+
+    <!-------------------- Qualification Area (Start) -------------------->
+    <section class="qualification">
+
+        <div class="heading">
+            <h2>my <span>qualification</span></h2>
+        </div>
+
+        <div class="box-container">
+
+            <div class="education">
+
+                <div class="experience-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <span>07/2021</span>
+                        <h3>Bachelor of Engineering in Information & Technology</h3>
+                        <p>Saraswati College of Engineering, Khar Ghar, Navi Mumbai</p>
+                        <p>Graduated with a CGPA of 7.14</p>
+                    </div>
+                </div>
+            
+                <div class="experience-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <span>04/2021 – 12/2021</span>
+                        <h3>Data Science, IBM</h3>
+                        <p>Completed courses in Python, Statistics, Machine Learning, SQL, and Excel.</p>
+                    </div>
+                </div>
+            
+                <div class="experience-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <span>2021</span>
+                        <h3>Data Scientist Certification</h3>
+                        <p>Coursera</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="content">
+                        <span>2019-2020</span>
+                        <h3>TPO Head of IT Department</h3>
+                        <p>Saraswati College of Engineering</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="content">
+                        <span>2016</span>
+                        <h3>First Runner-up in Technical Presentation</h3>
+                        <p>At college</p>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="experience">
+
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="content">
+                        <span>Present</span>
+                        <h3>Data-Voice (Software Developer)</h3>
+                        <p>Developed a microservices-based carton printing system with image QR generation, inspection, and end-to-end trace tracking.
+                            Revolutionized video streaming using ffmpeg and moviepy through camera enhancement.
+                            Orchestrated cross-functional synergy for unparalleled app development.</p>
+                    </div>
+                </div>
+            
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="content">
+                        <span>06/2022 - 11/2022</span>
+                        <h3>Seven’s Banking (Data Operator for Axis Bank)</h3>
+                        <p>Processed an average of 10,000 data records per week, ensuring accuracy and reliability for MIS reports and visualizations.
+                            Managed data storage and retrieval systems, enabling faster decision-making and generating valuable insights.</p>
+                    </div>
+                </div>
+            
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="content">
+                        <span>03/2021 - 08/2021</span>
+                        <h3>Nimap Infotech (Intern)</h3>
+                        <p>Actively contributed to frontend development projects, gaining practical experience in web technologies, with a focus on Angular and Type-Script.</p>
+                    </div>
+                </div>
+            
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="content">
+                        <span>2017 - 2021</span>
+                        <h3>Savio Tutorials (Mathematics Tutor)</h3>
+                        <p>Designed engaging lesson plans, tracked student progress, and ensured academic success at Savio Tutorials.</p>
+                    </div>
+                </div>
+            
+            </div>
+            
+        </div>
+    </section>
+
+    <!-------------------- Qualification Area (End) -------------------->
+
+
+
+    <!-------------------- Services Area (Start) -------------------->
+    <section class="service" id="service">
+
+        <div class="heading">
+            <h2>my <span>services</span></h2>
+        </div>
+
+        <div class="box-container">
+
+            <div class="service-item">
+                <i class="fas fa-code"></i>
+                <h3>Fullstack Web Development</h3>
+                <p>Building complete and user-friendly websites with expertise in both frontend and backend development.</p>
+            </div>
+            
+            <div class="service-item">
+                <i class="fas fa-cogs"></i>
+                <h3>Custom Development</h3>
+                <p>Creating personalized software solutions tailored to meet specific business needs.</p>
+            </div>
+            
+            <div class="service-item">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Data Analysis and Insights</h3>
+                <p>Analyzing data to provide valuable insights that can help in making informed business decisions.</p>
+            </div>
+            
+            <div class="service-item">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Interactive Data Visualization</h3>
+                <p>Presenting complex data in visually appealing charts and graphs for easy understanding.</p>
+            </div>
+            
+            <div class="service-item">
+                <i class="fas fa-cogs"></i>
+                <h3>DevOps & Deployment</h3>
+                <p>Streamlining development & deployment processes to ensure efficient & reliable software delivery.</p>
+            </div>
+            <!-- <div class="service-item">
+                <i class="fas fa-search-dollar"></i>
+                <h3>SEO Marketing</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Ex repellendus porro facilis.</p>
+            </div> -->
+
+        </div>
+
+    </section>
+    <!-------------------- Services Area (End) -------------------->
+
+
+
+    <!-------------------- Portfolio Area (Start) -------------------->
+    <section class="portfolio" id="portfolio">
+
+        <div class="heading">
+            <h2>my <span>portfolio</span></h2>
+        </div>
+
+        <div class="gallery">
+
+            <ul class="controls">
+                <li class="button btn active" data-filter="all">All Services</li>
+                <li class="button btn" data-filter="web">Fullstack Web Development</li>
+                <li class="button btn" data-filter="design">Custom Software Development</li>
+                <!-- Add the third important service below -->
+                <li class="button btn" data-filter="analysis">Data Analysis and Insights</li>
+            </ul>
+            
+    
+            <div class="box-container">
+    
+                <div class="portfolio-item image web">
+                    <img src="assets/images/Portfolio/portfolio-1.png" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>Fullstack Web Development</h4>
+                        <p>Lux-Mart</p>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-1.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item image design">
+                    <img src="assets/images/Portfolio/portfolio-2.jpg" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>Data Analysis and Insights</h4>
+                        <p>Sales Analysis</p>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-2.jpg" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item image design">
+                    <img src="assets/images/Portfolio/portfolio-3.jpg" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>Data Analysis and Insights</h4>
+                        <p>Credit Card Fraud Detection</p>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-3.jpg" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item image photography">
+                    <img src="assets/images/Portfolio/portfolio-4.png" alt="Portfolio-Image" />
+                    <div class="content">
+                        <h4>Custom Software Development</h4>
+                        <p>Data Extraction</p>
+                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-4.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+    
+                
+    
+            </div>
+    
+        </div>
+        
+    </section>
+    <!-------------------- Portfolio Area (End) -------------------->
+
+
+
+    <!-------------------- Testimonials Area (Start) -------------------->
+    <!-- <section class="testimonial" id="testimonial">
+
+        <div class="heading">
+            <h2><span>testimonials</span></h2>
+        </div>
+
+        <div class="swiper-container testimonial-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide testi-item">
+                    <img src="assets/images/Testimonials/pic-1.png" alt="Testimonial-Pic" />
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p class="comment">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum deleniti architecto harum natus aliquid nostrum 
+                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
+                        repellendus.
+                    </p>
+
+                    <div class="intro">
+                        <h3>jason roy</h3>
+                        <h5>web developer</h5>
+                    </div>
+                </div>
+
+                <div class="swiper-slide testi-item">
+                    <img src="assets/images/Testimonials/pic-2.png" alt="Testimonial-Pic" />
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p class="comment">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum deleniti architecto harum natus aliquid nostrum 
+                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
+                        repellendus.
+                    </p>
+
+                    <div class="intro">
+                        <h3>evelyn jones</h3>
+                        <h5>freelancer</h5>
+                    </div>
+                </div>
+
+                <div class="swiper-slide testi-item">
+                    <img src="assets/images/Testimonials/pic-3.png" alt="Testimonial-Pic" />
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p class="comment">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum deleniti architecto harum natus aliquid nostrum 
+                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
+                        repellendus.
+                    </p>
+
+                    <div class="intro">
+                        <h3>luke wood</h3>
+                        <h5>graphic designer</h5>
+                    </div>
+                </div>
+
+                <div class="swiper-slide testi-item">
+                    <img src="assets/images/Testimonials/pic-4.png" alt="Testimonial-Pic" />
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p class="comment">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum deleniti architecto harum natus aliquid nostrum 
+                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
+                        repellendus.
+                    </p>
+
+                    <div class="intro">
+                        <h3>sarah glenn</h3>
+                        <h5>freelancer</h5>
+                    </div>
+                </div>
+
+                <div class="swiper-slide testi-item">
+                    <img src="assets/images/Testimonials/pic-5.png" alt="Testimonial-Pic" />
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p class="comment">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatum deleniti architecto harum natus aliquid nostrum 
+                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
+                        repellendus.
+                    </p>
+
+                    <div class="intro">
+                        <h3>samit patel</h3>
+                        <h5>graphic designer</h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination swiper-pagination1"></div>
+
+        </div>
+    </section> -->
+    <!-------------------- Testimonials Area (End) -------------------->
+
+
+
+    <!-------------------- Blog Area (Start) -------------------->
+    <!-- <section class="blog" id="blog">
+
+        <div class="heading">
+            <h2>my <span>blog</span></h2>
+        </div>
+
+        <div class="swiper-container blog-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-1.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                            <h5><i class="fas fa-user"></i><span>by admin</span></h5>
+                        </div>
+                        <a class="main-heading" href="#">How to make your website responsive</a>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Nam possimus modi.
+                        </p>    
+                        <a href="#" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-2.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                            <h5><i class="fas fa-user"></i><span>by admin</span></h5>
+                        </div>
+                        <a class="main-heading" href="#">Learn Web Development As A Beginner</a>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Nam possimus modi.
+                        </p>    
+                        <a href="#" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-3.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                            <h5><i class="fas fa-user"></i><span>by admin</span></h5>
+                        </div>
+                        <a class="main-heading" href="#">Complete Roadmap For Web Development</a>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Nam possimus modi.
+                        </p>    
+                        <a href="#" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-4.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                            <h5><i class="fas fa-user"></i><span>by admin</span></h5>
+                        </div>
+                        <a class="main-heading" href="#">Websites & Tools For Every Web Developer</a>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Nam possimus modi.
+                        </p>    
+                        <a href="#" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-5.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                            <h5><i class="fas fa-user"></i><span>by admin</span></h5>
+                        </div>
+                        <a class="main-heading" href="#">Top 10 CSS tricks for every web developer</a>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Nam possimus modi.
+                        </p>    
+                        <a href="#" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination swiper-pagination2"></div>
+
+        </div>
+
+    </section> -->
+    <!-------------------- Blog Area (End) -------------------->
+
+
+
+    <!-------------------- Contact Area (Start) -------------------->
+    <section class="contact" id="contact">
+
+        <div class="heading">
+            <h2><span>contact</span> me</h2>
+        </div>
+
+        <div class="box-container">
+
+            <div class="contact-info">
+
+                <h3>Hire me</h3>
+            
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+            
+                <div class="info-item">
+                    <h4>Phone:</h4>
+                    <div class="detail">
+                        <div class="fas fa-phone"></div>
+                        <p>+91 7977285585</p>
+                    </div>
+                </div>
+            
+                <div class="info-item">
+                    <h4>Email:</h4>
+                    <div class="detail">
+                        <div class="fas fa-envelope"></div>
+                        <p class="gmail">shivamnirmal.097@gmail.com</p>
+                    </div>
+                </div>
+            
+                <div class="info-item">
+                    <h4>LinkedIn:</h4>
+                    <div class="detail">
+                        <div class="fab fa-linkedin"></div>
+                        <p class="linkedin">https://www.linkedin.com/in/ersn/</p>
+                    </div>
+                </div>
+            
+                <div class="info-item">
+                    <h4>GitHub:</h4>
+                    <div class="detail">
+                        <div class="fab fa-github"></div>
+                        <p class="github">https://github.com/Er-shivam11</p>
+                    </div>
+                </div>
+            
+            </div>
+    
+            <form method="post" class="contact-form" id="contactUs-Form">
+                    
+                <input type="text" name="name" class="box" id="name" placeholder="name" required />
+                <input type="email" name="email" class="box" id="email" placeholder="email" required />
+                <input type="text" name="subject" class="box" id="subject" placeholder="subject" required />
+                <textarea cols="30" rows="10" name="comment" id="comment" class="box" placeholder="message"></textarea>
+                <button type="submit" class="btn" name="submit" id="submit">send message</button>
+                
+                <span class="alert" id="msg"></span>
+                
+            </form>
+            
+        </div>
+
+    </section>
+    <!-------------------- Contact Area (End) -------------------->
+
+
+
+    <!-------------------- Footer Area (Start) -------------------->
+    <footer>
+        <div class="social">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+        </div>
+
+        <div class="content">
+            <p>created by <span>Shivam Nirmal</span> | all rights reserved</p>
+        </div>
+    </footer>
+    <!-------------------- Footer Area (End) -------------------->
+
+
+
+    <!-- JQuery -->
+    <script src="assets/vendors/jquery/jquery-3.6.0.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="assets/vendors/swiper/swiper.js"></script>
+
+    <!-- Magnific-Popup JS -->
+    <script src="assets/vendors/magnific-popup/jquery.magnific-popup.js"></script>
+
+    <!-- Typed JS -->
+    <script src="assets/vendors/typed/typed.js"></script>
+
+    <!-- Custom Script File -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scroll-spy.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/testi-slider.js"></script>
+    <script src="assets/js/blog-slider.js"></script>
+
+    <!---------------- Custom Script ---------------->
+
+    <!-- Typed Script -->
+    <script>
+        var typed = new Typed('.typing-text', {
+
+            strings : ['Software Development', 'Web Development', 'Data Analysis', 'Data Visualization', 'DevOps'],
+            typeSpeed: 120,
+            loop: true
+        });
     </script>
-    <script src="js/custom.js"></script>
+
+    <!-- Contact-Form Script -->
+    <script>
+        jQuery('#contactUs-Form').on('submit',function(e){
+          jQuery('#msg').html('');
+          jQuery('#submit').html('Please wait');
+          jQuery('#submit').attr('disabled',true);
+          jQuery.ajax({
+              url:'assets/php/submit.php',
+              type:'post',
+              data:jQuery('#contactUs-Form').serialize(),
+              success:function(result){
+                  jQuery('#msg').html(result);
+                  jQuery('#submit').html('Submit');
+                  jQuery('#submit').attr('disabled',false);
+                  jQuery('#contactUs-Form')[0].reset();
+              }
+          });
+          e.preventDefault();
+        });
+    </script>
+
 </body>
 </html>
