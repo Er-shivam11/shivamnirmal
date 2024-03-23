@@ -465,6 +465,15 @@ header #menu-btn:hover{
     }
 }
 
+
+/* Media query for smaller screens (e.g., smartphones) */
+@media only screen and (max-width: 480px) {
+    .icon {
+        width: 50px; /* Adjust size for smartphones */
+        height: 50px; /* Adjust size for smartphones */
+    }
+}
+
 .skills{
     display: -webkit-box;
     display: -ms-flexbox;
