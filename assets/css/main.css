@@ -458,7 +458,7 @@ header #menu-btn:hover{
     height: 100px; /* Adjust as needed */
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .icon {
         width: 60px; /* Adjust size for smaller screens */
         height: 60px; /* Adjust size for smaller screens */
