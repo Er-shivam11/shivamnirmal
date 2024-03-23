@@ -432,6 +432,32 @@ header #menu-btn:hover{
     padding: 2rem 0;
 }
 
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.box {
+    text-align: center;
+    color: white;
+}
+
+.icon {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+}
+
 .skills{
     display: -webkit-box;
     display: -ms-flexbox;
